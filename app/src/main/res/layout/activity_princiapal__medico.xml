@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Princiapal_MedicoActivity">
+
+    <include
+        android:id="@+id/toolbarPrincipal"
+        layout="@layout/toollbar_principal"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/idade"
+        tools:ignore="IncludeLayoutParam" />
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarPrincipal"
+        app:srcCompat="@drawable/fd_principal_medico" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPerfilM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/medicoft"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp" />
+
+    <TextView
+
+        android:id="@+id/txtNome_fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/crm"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:text="Dr."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtNome_fire"
+        android:layout_toEndOf="@+id/txtNome_fire"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/espcMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="PEDIATRIA"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/idade"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/idade"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtidade"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/crm_medico"
+        android:layout_marginEnd="50dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/crm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/idade"
+        android:layout_marginStart="20dp"
+        android:text="@string/crm"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/crm_medico"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/crm"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="@+id/imgPerfilM"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+    <LinearLayout
+        android:layout_below="@+id/imgFundo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <GridLayout
+            android:id="@+id/gridMenu"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ROW 1-->
+            <!-- Col 1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin= "16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                >
+                <LinearLayout
+                    android:id="@+id/menuChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imgChat"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:src="@drawable/chat"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chat"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin= "16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/cardAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imgalert"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:src="@drawable/warning"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alertas_da_gesta_o"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>

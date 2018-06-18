@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.Alert_GestacaoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/toolbarAlert"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerta de Gestação"
+        android:textStyle="bold"
+        android:textColor="@color/preto"
+        android:textSize="12pt"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_below="@+id/toolbarAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aviso"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="#000"
+            >
+
+            <EditText
+                android:id="@+id/assuntoAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/preto"
+                android:hint="@string/assunto"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/preto" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColorHint="#000"
+            >
+
+            <EditText
+                android:id="@+id/textareaAlert"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="@color/preto"
+                android:hint="@string/mensagem"
+                android:inputType="text|textMultiLine"
+                android:gravity="top|left"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                android:textColor="@color/preto"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/cancelarPublicacao"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_vermelho"
+                android:text="Cancelar"
+                android:textColor="@color/white"
+                 />
+
+            <Button
+                android:id="@+id/salvarPublicacao"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_verde"
+                android:text="@string/publicar"
+                android:textColor="@color/white"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

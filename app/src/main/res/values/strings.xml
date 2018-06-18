@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MedicoGestacao</string>
+
+
+    <string name="wifinegado">Não foi possivel Estabelecer conexão.Verifique se está com WI-FI ligado ou DADOS MOVEIS.</string>
+
+    <string name="psw_sucess">E-mail enviado com sucesso</string>
+    <string name="psw_negative">E-mail errado ou não cadastrado</string>
+
+    <string name="titulo">APP GESTANTE</string>
+    <string name="cad">Não possui cadastro?</string>
+    <string name="btnCad">CADASTRAR</string>
+    <string name="senha">Senha</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha?</string>
+    <string name="logar">Logar</string>
+    <string name="email">E-mail</string>
+    <string name="frase_reset">Informe seu E-mail para redefinir sua senha.</string>
+    <string name="reset_senha">Enviar E-mail</string>
+    <string name="idade">Idade</string>
+    <string name="crm">CRM</string>
+    <string name="salvar">Salvar</string>
+    <string name="especialidade">Especialidade</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="sair">Sair</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chat">Chat</string>
+    <string name="alertas_da_gesta_o">Alertas da Gestação</string>
+    <string name="sexo">Sexo</string>
+    <string name="title_activity_sala_chat">SalaChatActivity</string>
+    <string name="assunto">Assunto</string>
+    <string name="publicado">Autor</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="publicar">Publicar</string>
+    <string name="aviso">-Todo conteúdo publicado aqui aparecerá para todas as gestantes, como ALERTA DE GESTAÇÃO.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
